@@ -15,6 +15,23 @@
 				<key>AddPNLF</key>
 				<true/>
 			</dict>
+			<key>Patches</key>
+			<array>
+				<dict>
+					<key>Comment</key>
+					<string>change EC0 to EC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUMwXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUNfXw==
+					</data>
+				</dict>
+			</array>
 		</dict>
 		<key>SSDT</key>
 		<dict>
@@ -54,32 +71,57 @@
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>layout-id</key>
-				<data>AwAAAA==</data>
+				<data>
+				AwAAAA==
+				</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
-				<key>framebuffer-portcount</key>
-				<data>AgAAAA==</data>
-				<key>enable-hdmi20</key>
-				<data>AQAAAA==</data>
-				<key>device-id</key>
-				<data>G1kAAA==</data>
-				<key>disable-external-gpu</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-alldata</key>
-				<data>AQUKAAAIAACHAQAAAgQKAAAIAACHAQAA/wAAAAEAAAAgAAAA</data>
-				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-type</key>
-				<data>AAgAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
 				<key>AAPL,ig-platform-id</key>
-				<data>AAAbWQ==</data>
+				<data>
+				AAAbWQ==
+				</data>
+				<key>device-id</key>
+				<data>
+				G1kAAA==
+				</data>
+				<key>disable-external-gpu</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-alldata</key>
+				<data>
+				AQUKAAAIAACHAQAAAgQKAAAIAACHAQAA/wAAAAEAAAAg
+				AAAA
+				</data>
+				<key>framebuffer-con1-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-type</key>
+				<data>
+				AAgAAA==
+				</data>
+				<key>framebuffer-fbmem</key>
+				<data>
+				AACQAA==
+				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-portcount</key>
+				<data>
+				AgAAAA==
+				</data>
+				<key>framebuffer-stolenmem</key>
+				<data>
+				AAAwAQ==
+				</data>
 			</dict>
 		</dict>
 		<key>SetIntelBacklight</key>
@@ -93,6 +135,9 @@
 		<array>
 			<string>Preboot</string>
 			<string>Recovery</string>
+			<string>Legacy HD3</string>
+			<string>Legacy HD4</string>
+			<string>Legacy HD5</string>
 		</array>
 		<key>Scan</key>
 		<dict>
@@ -114,13 +159,17 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>SW50ZXJuYWw=</data>
+				<data>
+				SW50ZXJuYWw=
+				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
 				<string>AppleAHCIPort</string>
 				<key>Replace</key>
-				<data>RXh0ZXJuYWw=</data>
+				<data>
+				RXh0ZXJuYWw=
+				</data>
 			</dict>
 		</array>
 	</dict>
