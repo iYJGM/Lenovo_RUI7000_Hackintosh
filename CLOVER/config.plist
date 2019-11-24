@@ -59,11 +59,8 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>Audio</key>
-		<dict>
-			<key>Inject</key>
-			<string>No</string>
-		</dict>
+		<key>LANInjection</key>
+		<false/>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
@@ -125,9 +122,14 @@
 			</dict>
 		</dict>
 		<key>SetIntelBacklight</key>
-		<true/>
+		<false/>
 		<key>SetIntelMaxBacklight</key>
-		<true/>
+		<false/>
+		<key>USB</key>
+		<dict>
+			<key>Inject</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>GUI</key>
 	<dict>
@@ -157,7 +159,7 @@
 				<key>Comment</key>
 				<string>External icons patch</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				SW50ZXJuYWw=
